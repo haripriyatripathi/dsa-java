@@ -29,23 +29,24 @@ public class ReverseLinkedList {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        System.out.println("Original List:");
+        System.out.println("Original List: ");
         printList(head);
 
         ListNode reversed = reverseList(head);
 
-        System.out.println("Reversed List:");
+        System.out.println("Reversed List: ");
         printList(reversed);
     }
 
     private static void printList(ListNode node) {
         while (node != null) {
-            System.out.print(node.val + " ");
+            System.out.print(node.val  + " ");
             node = node.next;
         }
         System.out.println();
     }
 }
+
 
 
 
